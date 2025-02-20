@@ -54,6 +54,7 @@ Chemotherapy= st.radio("Chemotherapy", ['No', 'Yes'])
 user_df = pd.DataFrame({
     'Sex': [Sex],
     'Race': [Race],
+    'Age': [Age],
     'Marital status': [Maritalstatus],
     'AJCC Stage Group': [AJCC_Stage],
     'AJCC T': [AJCC_T_stage],
@@ -65,7 +66,6 @@ user_df = pd.DataFrame({
     'tumor size': [Tumorsize],
     'Primary Site': [Site],
     'Stage': [Stage],    
-    'Age': [Age]
 
 })
 
