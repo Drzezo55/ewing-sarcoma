@@ -112,13 +112,3 @@ if st.button("Make Prediction"):
             st.write(f"The predicted survival years for this patient is: {prediction[0] * 12} months")
 
 
-
-if st.button("Make Prediction"):
-    # Assuming 'model' is your pre-trained model
-    prediction = model.predict(user_df)  # Make predictions using the model
-
-    if prediction < 0:
-        st.write("The predicted survival years for this patient is negative. Unable to provide accurate prediction.")
-    else:
-        st.write("The predicted survival years ths for this patient is")
-        st.write(prediction*12)
