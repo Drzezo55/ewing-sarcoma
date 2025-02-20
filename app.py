@@ -28,7 +28,7 @@ Chemotherapy_mapping= {'No': 0, 'Yes': 1}
 
 
 # Streamlit App
-
+st.title ("5 years Survival prediction model for Ewing sarcoma)
 Age = st.slider("Age (years)", min_value=0, max_value=100, value=50, step=1)
 Sex = st.radio("Sex", ['Male', 'Female'])
 Race = st.selectbox("Race", ['White', 'Other (American Indian/AK Native, Asian/Pacific Islander)', 'Black'])
