@@ -20,7 +20,7 @@ Primary_Site_mapping= {'C40.0-Long bones: upper limb, scapula, and associated jo
                        'C41.2-Vertebral column': 4, 'C41.0-Bones of skull and face and associated joints': 5,
                          'C40.3-Short bones of lower limb and associated joints': 6, 'C40.1-Short bones of upper limb and associated joints': 7,
                            'C41.1-Mandible': 8, 'C41.8-Overlap bones, joints, and art. cartilage': 9,
-                      'C40.8-Overlap of bones, joints, and art. cartilage of limbs': 10, 'C38.1-Anterior mediastinum': 11}
+                      'C40.8-Overlap of bones, joints, and art. cartilage of limbs': 10}
 Stage_mapping= {'Regional': 0, 'Distant': 1, 'Localized': 2}
 Surgery_mapping= {'Yes': 1, 'No': 0}
 Radiation_mapping= {'Yes': 1, 'No': 0}
@@ -43,7 +43,7 @@ Site = st.selectbox("Primary Site", ['C40.0-Long bones: upper limb, scapula, and
                        'C41.2-Vertebral column', 'C41.0-Bones of skull and face and associated joints',
                          'C40.3-Short bones of lower limb and associated joints', 'C40.1-Short bones of upper limb and associated joints',
                            'C41.1-Mandible', 'C41.8-Overlap bones, joints, and art. cartilage',
-                      'C40.8-Overlap of bones, joints, and art. cartilage of limbs', 'C38.1-Anterior mediastinum'])
+                      'C40.8-Overlap of bones, joints, and art. cartilage of limbs'])
 Stage = st.selectbox("Stage", ['Localized', 'Regional', 'Distant'])
 Tumorsize = st.slider("tumor size", min_value=0, max_value=500, value=50, step=1)
 Surgery= st.radio("Surgery", ['Yes', 'No'])
